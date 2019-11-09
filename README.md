@@ -29,15 +29,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
-
+    The DOM is the tree structure of the individual object that represents a part of the html document
 2. What is an event?
-
+    An event is something that the user does to trigger or set an event value to true aka clicking on a button
 3. What is an event listener?
-
+    An event listener waits for the user to trigger an event and then performs some given function.
 4. Why would we convert a NodeList into an Array?
-
+    NodeLists can only be iterated over with foreach
 5. What is a component?
-
+    A componenet is a piece of the DOM. 
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account

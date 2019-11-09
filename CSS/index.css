@@ -303,3 +303,7 @@ body {
   width: 100%;
   display: none;
 }
+
+.carousel > img:nth-child(1){
+  display: inline-block;
+}
