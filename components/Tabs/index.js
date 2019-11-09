@@ -10,13 +10,37 @@
 
 const topics = document.querySelector('.topics');
 
+
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then(response =>{
         response.data.topics.forEach(i => {
             const tab = document.createElement('div');
             tab.className = 'tab';
             tab.textContent = i;
+            
+            if(i.toLocaleLowerCase() === 'node.js'){
+                tab.dataset.tab = 'node';
+            }
+            else{
+                tab.dataset.tab = i;
+            }
+            tab.addEventListener('click', changeCards);
             topics.append(tab);
         });
     })
     .catch(err => console.log(err));
+
+function changeCards(event){
+    const cards = document.querySelectorAll('.card');
+    console.log(cards);
+    cards.forEach(i =>{
+        console.log(i.dataset.type);
+        console.log(event.target.getAttribute('type'));
+        if(i.dataset.type === event.target.dataset.tab){
+            i.style.display = 'flex';
+        }
+        else{
+            i.style.display = 'none';
+        }
+    });
+}

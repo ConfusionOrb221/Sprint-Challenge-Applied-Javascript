@@ -32,6 +32,7 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
                 const authorName = document.createElement('span');
 
                 card.className = 'card';
+                card.dataset.type = keys;
 
                 headline.className = 'headline';
                 headline.textContent = content.headline;

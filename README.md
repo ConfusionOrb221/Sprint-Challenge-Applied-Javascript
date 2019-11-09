@@ -35,7 +35,7 @@ Edit this document to include your answers after each question. Make sure to lea
 3. What is an event listener?
     An event listener waits for the user to trigger an event and then performs some given function.
 4. Why would we convert a NodeList into an Array?
-    NodeLists cannot be iterated over using foreach or map
+    NodeLists can only be iterated over with foreach
 5. What is a component?
     A componenet is a piece of the DOM. 
 ### Git Set up
